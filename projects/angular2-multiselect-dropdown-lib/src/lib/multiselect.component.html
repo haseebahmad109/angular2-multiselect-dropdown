@@ -116,7 +116,7 @@
                 <label class="nodata-label" *ngIf="settings.groupBy && groupedData?.length == 0" [hidden]="filter == undefined || filter?.length == 0">{{settings.noDataLabel}}</label>
 
                 <div class="btn-container" *ngIf="settings.addNewItemOnFilter && filterLength == 0" [hidden]="filter == undefined || filter?.length == 0">
-                    <button class="c-btn btn-iceblue" (click)="addFilterNewItem()">{{settings.addNewButtonText}}</button>
+                    <button type="button" class="c-btn btn-iceblue" (click)="addFilterNewItem()">{{settings.addNewButtonText}}</button>
                 </div>
             </div>
 
